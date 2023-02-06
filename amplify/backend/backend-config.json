@@ -1,18 +1,25 @@
 {
-  "function": {
-    "amplifydemo3c3f775a": {
-      "build": true,
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2023-02-06T05:20:04.253Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifydemo3c3f775a_secretsPathAmplifyAppId": {
+    "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
-          "category": "function",
-          "resourceName": "amplifydemo3c3f775a"
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
         }
       ]
     }
