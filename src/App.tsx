@@ -19,6 +19,8 @@ function App() {
           Learn React
         </a>
         <p>CICD TEST</p>
+        <p>CICD TEST</p>
+        <p>CICD TEST</p>
       </header>
     </div>
   );
