@@ -1,4 +1,10 @@
 {
+  "custom": {
+    "customResourcea5608d0a": {
+      "providerPlugin": "awscloudformation",
+      "service": "customCDK"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "lastPushTimeStamp": "2023-02-06T05:20:04.253Z",
