@@ -1,7 +1,7 @@
 import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Repository } from 'aws-cdk-lib/aws-codecommit';
-import { CfnApp, CfnBranch, CfnDomain } from 'aws-cdk-lib/aws-amplify';
+import { CfnApp, CfnBranch } from 'aws-cdk-lib/aws-amplify';
 import 'dotenv/config';
 
 export class AppletreeStack extends Stack {
@@ -21,7 +21,6 @@ export class AppletreeStack extends Stack {
 
     const amplify = new CfnApp(this, 'appletree-amplify-app', {
       name: 'appletree-amplify-app',
-      accessToken: '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',
       repository: repo.repositoryCloneUrlHttp,
       enableBranchAutoDeletion: false,
       environmentVariables: [...environmentVariables],
@@ -36,7 +35,7 @@ export class AppletreeStack extends Stack {
 
     new CfnBranch(this, 'AmplifyBranch', {
       appId: amplify.attrAppId,
-      branchName: 'master',
+      branchName: 'main',
       enableAutoBuild: true,
     });
   }
