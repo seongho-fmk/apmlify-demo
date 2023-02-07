@@ -1,0 +1,19 @@
+{
+  "version": "29.0.0",
+  "files": {
+    "136f393f020ac039814cc7ab56ae9aaebbe6aefff2acc79417a0b9ba0c5a177d": {
+      "source": {
+        "path": "AppletreeStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "136f393f020ac039814cc7ab56ae9aaebbe6aefff2acc79417a0b9ba0c5a177d.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
