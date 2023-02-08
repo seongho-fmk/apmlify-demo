@@ -17,7 +17,7 @@ export class AppletreeStack extends Stack {
 
     const amplify = new CfnApp(this, 'appletree-amplify-app', {
       name: 'appletree-amplify-app',
-      repository: 'https://github.com/seongho-fmk/apmlify-demo.git',
+      repository: 'https://github.com/seongho-fmk/apmlify-demo',
       accessToken: process.env.GITHUB_ACCESS_TOKEN,
       enableBranchAutoDeletion: false,
       environmentVariables: [...environmentVariables],
