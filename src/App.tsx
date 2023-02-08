@@ -20,7 +20,7 @@ function App() {
         </a>
         <p>CICD TEST</p>
         <p>CICD TEST</p>
-        <p>CICD TEST</p>
+        <p>CICD 이상한데?</p>
       </header>
     </div>
   );
