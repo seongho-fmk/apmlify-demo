@@ -8,6 +8,7 @@ phases:
     commands:
       - echo CORS_ALLOW_ORIGINS=${CORS_ALLOW_ORIGINS} >> .env
       - pwd
+      - ls -al
       - cat .env
 # 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
 artifacts:
