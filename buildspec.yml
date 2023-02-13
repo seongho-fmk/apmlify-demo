@@ -7,6 +7,8 @@ phases:
   pre_build:
     commands:
       - echo CORS_ALLOW_ORIGINS=${CORS_ALLOW_ORIGINS} >> .env
+      - pwd
+      - cat .env
 # 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
 artifacts:
   # 빌드 환경에서 빌드 출력 결과물이 생성되는 위치를 나타냅니다.
